@@ -47,15 +47,15 @@
                         <legend>Contact Details</legend>                        
                         <div class="field">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" placeholder="e.g Joe Balachio" autofocus>
                         </div>
                         <div class="field">
                             <label for="phone">Phone:</label>
-                            <input type="text" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone" placeholder="e.g 000-0000">
                         </div>
                         <div class="field">
                             <label for="email">Email:</label>
-                            <input type="text" name="email" id="email">
+                            <input type="email" name="email" id="email" placeholder="e.g joe@example.com">
                         </div>
                     </fieldset>
 
@@ -71,11 +71,12 @@
                         </div>
                         <div class="field">
                             <label for="bookingTime">Booking Time:</label>
-                            <input type="text" name="bookingTime" id="bookingTime">
+                            <input type="datetime-local" name="bookingTime" id="bookingTime"
+                                placeholder="2020-10-23 17:50">
                         </div>
                         <div class="field">
                             <label for="guests">Number of Guests:</label>
-                            <input type="text" name="guests" id="guests">
+                            <input type="number" name="guests" id="guests" value="2">
                         </div>
                         <div class="field">
                             <label for="marketing">Please tick this box if you would like to 
@@ -84,7 +85,8 @@
                         </div>
                         <div class="field">
                             <label for="message">Special Requests:</label>
-                            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                            <textarea name="message" id="message" cols="50" rows="10"
+                                placeholder="Type your message..."></textarea>
                         </div>
                     </fieldset>
 
