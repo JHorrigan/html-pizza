@@ -41,43 +41,52 @@
                     your booking.
                 </p>
                 <form action="bookings.php" method="POST">
-                    <div class="field">
-                        <label for="name">Name:</label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="field">
-                        <label for="phone">Phone:</label>
-                        <input type="text" name="phone" id="phone">
-                    </div>
-                    <div class="field">
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div class="field">
-                        <label for="restaurant">Restaurant:</label>
-                        <select name="restaurant" id="restaurant">
-                            <option>310 West 38th Street, NY</option>
-                            <option>2450 Broadway, NY</option>
-                            <option>200 West 44th Street, NY</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label for="bookingTime">Booking Time:</label>
-                        <input type="text" name="bookingTime" id="bookingTime">
-                    </div>
-                    <div class="field">
-                        <label for="guests">Number of Guests:</label>
-                        <input type="text" name="guests" id="guests">
-                    </div>
-                    <div class="field">
-                        <label for="marketing">Please tick this box if you would like to 
-                            receive special offers from Joe's Pizza Co.</label>
-                        <input type="checkbox" name="marketing" id="marketing">
-                    </div>
-                    <div class="field">
-                        <label for="message">Special Requests:</label>
-                        <textarea name="message" id="message" cols="50" rows="10"></textarea>
-                    </div>
+
+                    <fieldset>
+                        <legend>Contact Details</legend>                        
+                        <div class="field">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="field">
+                            <label for="phone">Phone:</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Booking Information</legend>
+                        <div class="field">
+                            <label for="restaurant">Restaurant:</label>
+                            <select name="restaurant" id="restaurant">
+                                <option>310 West 38th Street, NY</option>
+                                <option>2450 Broadway, NY</option>
+                                <option>200 West 44th Street, NY</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="bookingTime">Booking Time:</label>
+                            <input type="text" name="bookingTime" id="bookingTime">
+                        </div>
+                        <div class="field">
+                            <label for="guests">Number of Guests:</label>
+                            <input type="text" name="guests" id="guests">
+                        </div>
+                        <div class="field">
+                            <label for="marketing">Please tick this box if you would like to 
+                                receive special offers from Joe's Pizza Co.</label>
+                            <input type="checkbox" name="marketing" id="marketing">
+                        </div>
+                        <div class="field">
+                            <label for="message">Special Requests:</label>
+                            <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                        </div>
+                    </fieldset>
+
                     <div class="field">
                         <button type="submit">Request Booking</button>
                     </div>
