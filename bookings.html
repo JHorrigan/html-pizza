@@ -47,11 +47,13 @@
                         <legend>Contact Details</legend>                        
                         <div class="field">
                             <label for="name">Name:</label>
-                            <input type="text" name="name" id="name" placeholder="e.g Joe Balachio" autofocus required maxlength="65">
+                            <input type="text" name="name" id="name" placeholder="e.g Joe Balachio" 
+                                autofocus required maxlength="65">
                         </div>
                         <div class="field">
                             <label for="phone">Phone:</label>
-                            <input type="tel" name="phone" id="phone" placeholder="e.g 000-0000">
+                            <input type="tel" name="phone" id="phone" placeholder="e.g 000-0000" 
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </div>
                         <div class="field">
                             <label for="email">Email:</label>
