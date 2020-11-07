@@ -36,37 +36,65 @@
             <!-- Page Text -->
             <section id="page-text">
                 <h1>Locations</h1>
-                <section id="location1">
-                    <h1>310 West 38th Street, NY</h1>
+                <meta id="company-name" itemprop="name" content="Joe's Pizza Co.">
+                <section id="location1" itemscope
+                itemtype="http://schema.org/LocalBusiness"
+                itemref="company-name">
+                    <h1 itemprop="address" itemscope
+                        itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">310 West 38th Street</span>,
+                        <span itemprop="addressRegion">NY</span>
+                    </h1>
                     <img src="img/map1.png"
-                         alt="Joe's Pizza at 310 West 38th Street, NY">
-                    <p class="location-phone">212 012 3456</p>
+                         alt="Joe's Pizza at 310 West 38th Street, NY"
+                         itemprop="image">
+                    <p class="location-phone" itemprop="telephone">212 012 3456</p>
                     <h2>Opening Hours</h2>
                     <p>
-                        Mon-Fri: 12:00 - 22:00<br>
-                        Sat-Sun: 11:00 - 23:00
+                        <time itemprop="openingHours" datetime="Mo-Fr 12:00-22:00">
+                        Mon-Fri: 12:00 - 22:00</time>
+                        <time itemprop="openingHours" datetime="Sa,Su 11:00-23:00">
+                        Sat-Sun: 11:00 - 23:00</time>
                     </p>
                 </section>
-                <section id="location2">
-                    <h1>2450 Broadway, NY</h1>
+                <section id="location2" itemscope
+                itemtype="http://schema.org/LocalBusiness"
+                itemref="company-name">
+                    <h1 itemprop="address" itemscope
+                        itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">2450 Broadway</span>,
+                        <span itemprop="addressRegion">NY</span>
+                    </h1>
                     <img src="img/map2.png"
-                         alt="Joe's Pizza at 2450 Broadway, NY">
+                         alt="Joe's Pizza at 2450 Broadway, NY"
+                         itemprop="image">
                     <p class="location-phone">212 012 3457</p>
                     <h2>Opening Hours</h2>
                     <p>
-                        Mon-Fri: 12:00 - 22:00<br>
-                        Sat-Sun: 11:00 - 23:00
+                        <time itemprop="openingHours" datetime="Mo-Fr 12:00-22:00">
+                        Mon-Fri: 12:00 - 22:00</time>
+                        <time itemprop="openingHours" datetime="Sa,Su 11:00-23:00">
+                        Sat-Sun: 11:00 - 23:00</time>
                     </p>
                 </section>
-                <section id="location3">
-                    <h1>200 West 44th Street, NY</h1>
+                <section id="location3" itemscope
+                itemtype="http://schema.org/LocalBusiness"
+                itemref="company-name">
+                    <h1 itemprop="address" itemscope
+                        itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">200 West 44th Street</span>,
+                        <span itemprop="addressRegion">NY</span>
+                    </h1>
                     <img src="img/map3.png"
-                         alt="Joe's Pizza at 200 West 44th Street, NY">
+                         alt="Joe's Pizza at 200 West 44th Street, NY"
+                         itemprop="image">
                     <p class="location-phone">212 012 3458</p>
                     <h2>Opening Hours</h2>
                     <p>
-                        Mon-Fri: 12:00 - 22:00<br>
-                        Sat-Sun: 11:00 - 23:00
+                        <time itemprop="openingHours" datetime="Mo-Fr 12:00-22:00">
+                        Mon-Fri: 12:00 - 22:00</time>
+                        <time itemprop="openingHours" datetime="Sa,Su 11:00-23:00">
+                        Sat-Sun: 11:00 - 23:00</time>
                     </p>
                 </section>
             </section>
