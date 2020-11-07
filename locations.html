@@ -80,14 +80,21 @@
                 <section id="location3" itemscope
                 itemtype="http://schema.org/LocalBusiness"
                 itemref="company-name">
-                    <h1>200 West 44th Street, NY</h1>
+                    <h1 itemprop="address" itemscope
+                        itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">200 West 44th Street</span>,
+                        <span itemprop="addressRegion">NY</span>
+                    </h1>
                     <img src="img/map3.png"
-                         alt="Joe's Pizza at 200 West 44th Street, NY">
+                         alt="Joe's Pizza at 200 West 44th Street, NY"
+                         itemprop="image">
                     <p class="location-phone">212 012 3458</p>
                     <h2>Opening Hours</h2>
                     <p>
-                        Mon-Fri: 12:00 - 22:00<br>
-                        Sat-Sun: 11:00 - 23:00
+                        <time itemprop="openingHours" datetime="Mo-Fr 12:00-22:00">
+                        Mon-Fri: 12:00 - 22:00</time>
+                        <time itemprop="openingHours" datetime="Sa,Su 11:00-23:00">
+                        Sat-Sun: 11:00 - 23:00</time>
                     </p>
                 </section>
             </section>
