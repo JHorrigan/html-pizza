@@ -52,17 +52,17 @@
                         <div class="field">
                             <label for="name">Name*:</label>
                             <input type="text" name="name" id="name" placeholder="e.g Joe Balachio" 
-                                autofocus required maxlength="65">
+                                autofocus required maxlength="65" tabindex="1">
                         </div>
                         <div class="field">
                             <label for="phone">Phone*:</label>
                             <input type="tel" name="phone" id="phone" placeholder="e.g 000-0000" 
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required tabindex="2">
                         </div>
                         <div class="field">
                             <label for="email">Email*:</label>
                             <input type="email" name="email" id="email" placeholder="e.g joe@example.com" 
-                                required>
+                                required tabindex="3">
                         </div>
                     </fieldset>
 
@@ -70,7 +70,7 @@
                         <legend>Booking Information</legend>
                         <div class="field">
                             <label for="restaurant">Restaurant*:</label>
-                            <select name="restaurant" id="restaurant" required>
+                            <select name="restaurant" id="restaurant" required tabindex="4">
                                 <option>310 West 38th Street, NY</option>
                                 <option>2450 Broadway, NY</option>
                                 <option>200 West 44th Street, NY</option>
@@ -79,27 +79,28 @@
                         <div class="field">
                             <label for="bookingTime">Booking Time*:</label>
                             <input type="datetime-local" name="bookingTime" id="bookingTime"
-                                placeholder="2020-10-23 17:50" required>
+                                placeholder="2020-10-23 17:50" required tabindex="5">
                         </div>
                         <div class="field">
                             <label for="guests">Number of Guests*:</label>
-                            <input type="number" name="guests" id="guests" value="2" required 
-                                min="1" max="12">
+                            <input type="number" name="guests" id="guests" value="6" required 
+                                min="1" max="12" tabindex="6">
                         </div>
                         <div class="field">
                             <label for="marketing">Please tick this box if you would like to 
                                 receive special offers from Joe's Pizza Co.</label>
-                            <input type="checkbox" name="marketing" id="marketing">
+                            <input type="checkbox" name="marketing" id="marketing" tabindex="7">
                         </div>
                         <div class="field">
                             <label for="message">Special Requests:</label>
                             <textarea name="message" id="message" cols="50" rows="10"
-                                placeholder="Type your message..." maxlength="250"></textarea>
+                                placeholder="Type your message..." maxlength="250"
+                                tabindex="8"></textarea>
                         </div>
                     </fieldset>
 
                     <div class="field">
-                        <button type="submit">Request Booking</button>
+                        <button type="submit" tabindex="9">Request Booking</button>
                     </div>
                 </form>
             </section>
