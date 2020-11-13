@@ -5,6 +5,7 @@ window.onload = function() {
     // Get the buttons
     var playBtn = document.getElementById("playBtn");
     var pauseBtn = document.getElementById("pauseBtn");
+    var seekBar = document.getElementById("seekBar");
 
     // Add an event listener for the play button
     playBtn.addEventListener("click", function(e) {
@@ -16,5 +17,15 @@ window.onload = function() {
     pauseBtn.addEventListener("click", function(e) {
         // Pause the video
         video.pause();
+    });
+
+    // Add an event listener for the seek bar
+    seekBar.addEventListener("change", function(e) {
+        // Calculate the time in the video that playback
+        // should be moved to.
+        var time = video.duration * (seekBar.value / 100);
+
+        // Update the current time in the video
+        video.currentTime = time;
     });
 }
