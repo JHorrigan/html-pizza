@@ -28,4 +28,13 @@ window.onload = function() {
         // Update the current time in the video
         video.currentTime = time;
     });
+
+    // Update the seek bar as the video plays
+    video.addEventListener("timeupdate", function(e) {
+        // Calculate the slider value
+        var value = (100 / video.duration) * video.currentTime;
+
+        // Update the slider value
+        seekBar.value = value;
+    });
 }
