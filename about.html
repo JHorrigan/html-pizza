@@ -36,6 +36,23 @@
             <!-- Page Text -->
             <section id="page-text">
                 <h1>About Joe's Pizza Co.</h1>
+                <div id="video">
+                    <video id="myVideo" width="400" height="225" poster="img/poster.png"
+                        preload="none">
+                        <source src="videos/mikethefrog.webm" type="video/webm">
+                        <!--<source src="videos/mikethefrog.ogv" type="video/ogv">
+                        <source src="videos/mikethefrog.mp4" type="video/mp4">-->
+                        <p>
+                            Your browser doesn't support HTML5 video.
+                            <a href="#">Download</a> the video instead.
+                        </p>
+                    </video>
+                    <div id="video-controls">
+                        <button type="button" id="playBtn">Play</button>
+                        <button type="button" id="pauseBtn">Pause</button>
+                        <input type="range" id="seekBar" value="0">
+                    </div>
+                </div>
                 <p>Established in 1984, Joe's Pizza Co. prides itself on serving up authentic Italian pizzas 
                     with a New York twist. Since opening their first restaurant at 310 West 38th Street, 
                     Joe's has expanded into two more restaurants distributed throughout New York.</p>
@@ -53,5 +70,6 @@
             <a href="sitemap.html" title="Links to all of the pages on this website.">Sitemap</a>
         </footer>
     </div>
+    <script src="js/video.js"></script>
 </body>
 </html>
