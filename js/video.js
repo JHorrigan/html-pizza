@@ -42,4 +42,9 @@ window.onload = function() {
     seekBar.addEventListener("mousedown", function(e) {
         video.pause();
     });
+
+    // Continue playback when the user stops seeking
+    seekBar.addEventListener("mouseup", function(e) {
+        video.play();
+    });
 }
