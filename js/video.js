@@ -37,4 +37,9 @@ window.onload = function() {
         // Update the slider value
         seekBar.value = value;
     });
+
+    // Pause playback when the user starts seeking
+    seekBar.addEventListener("mousedown", function(e) {
+        video.pause();
+    });
 }
