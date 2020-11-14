@@ -7,6 +7,7 @@ window.onload = function() {
     var pauseBtn = document.getElementById("pauseBtn");
     var seekBar = document.getElementById("seekBar");
     var volumeControl = document.getElementById("volume");
+    var muteBtn = document.getElementById("muteBtn");
 
     // Add an event listener for the play button
     playBtn.addEventListener("click", function(e) {
@@ -54,4 +55,17 @@ window.onload = function() {
         // Update the videos volume property
         video.volume = volumeControl.value;
     });
+
+    // Add an event listener for the mute button
+    muteBtn.addEventListener("click", function() {
+        // Toggle the muted value
+        if (video.muted == true) {
+            video.muted = false;
+            muteBtn.textContent = "Mute";
+        } else {
+            video.muted = true;
+            muteBtn.textContent = "Unmute";
+        }
+    });
+
 }
