@@ -6,6 +6,7 @@ window.onload = function() {
     var playBtn = document.getElementById("playBtn");
     var pauseBtn = document.getElementById("pauseBtn");
     var seekBar = document.getElementById("seekBar");
+    var volumeControl = document.getElementById("volume");
 
     // Add an event listener for the play button
     playBtn.addEventListener("click", function(e) {
@@ -46,5 +47,11 @@ window.onload = function() {
     // Continue playback when the user stops seeking
     seekBar.addEventListener("mouseup", function(e) {
         video.play();
+    });
+
+    // Add an event listener for the volume control
+    volumeControl.addEventListener("change", function() {
+        // Update the videos volume property
+        video.volume = volumeControl.value;
     });
 }
