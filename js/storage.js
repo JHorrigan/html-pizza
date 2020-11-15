@@ -40,4 +40,8 @@ function populateForm() {
     if (localStorage.getItem("phone") != null) {
         phone.value = localStorage.getItem("phone");
     }
+
+    if (localStorage.getItem("email") != null) {
+        email.value = localStorage.getItem("email");
+    }
 }
