@@ -1,6 +1,9 @@
 window.onload = function() {
     // Check for LocalStorage support
     if (localStorage) {
+        // Populate the form fields if values in localStorage
+        populateForm(form);
+
         // Get the form
         var form = document.getElementById("bookingForm");
 
