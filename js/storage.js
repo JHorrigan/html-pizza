@@ -17,4 +17,9 @@ function saveData() {
     var name = document.getElementById("name");
     var phone = document.getElementById("phone");
     var email = document.getElementById("email");
+
+    // Store the values
+    localStorage.setItem("name", name.value);
+    localStorage.setItem("phone", phone.value);
+    localStorage.setItem("email", email.value);
 }
