@@ -30,4 +30,10 @@ function populateForm() {
     var name = document.getElementById("name");
     var phone = document.getElementById("phone");
     var email = document.getElementById("email");
+
+    // Retrieve the saved data and update the values of the form
+    // fields
+    if (localStorage.getItem("name") != null) {
+        name.value = localStorage.getItem("name");
+    }
 }
