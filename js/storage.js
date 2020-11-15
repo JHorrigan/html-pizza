@@ -5,8 +5,16 @@ window.onload = function() {
         var form = document.getElementById("bookingForm");
 
         // Event listener for when the bookings form is submitted
-        form.addEventListener("", function(e) {
+        form.addEventListener("submit", function(e) {
             saveData(form);
         });
     }
+}
+
+// Save the form data in LocalStorage
+function saveData() {
+    // Fetch the input elements
+    var name = document.getElementById("name");
+    var phone = document.getElementById("phone");
+    var email = document.getElementById("email");
 }
