@@ -23,3 +23,11 @@ function saveData() {
     localStorage.setItem("phone", phone.value);
     localStorage.setItem("email", email.value);
 }
+
+// Attempt to populate the form using data stored in localStorage
+function populateForm() {
+    // Fetch the input elements
+    var name = document.getElementById("name");
+    var phone = document.getElementById("phone");
+    var email = document.getElementById("email");
+}
