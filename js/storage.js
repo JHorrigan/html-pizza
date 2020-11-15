@@ -36,4 +36,8 @@ function populateForm() {
     if (localStorage.getItem("name") != null) {
         name.value = localStorage.getItem("name");
     }
+
+    if (localStorage.getItem("phone") != null) {
+        phone.value = localStorage.getItem("phone");
+    }
 }
