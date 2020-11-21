@@ -17,4 +17,5 @@ function findNearest(lat, lon) {
     // Add text to the distance labels
     document.getElementById("location1Distance").textContent = "Distance: " + d1 + " miles";
     document.getElementById("location2Distance").textContent = "Distance: " + d2 + " miles";
+    document.getElementById("location3Distance").textContent = "Distance: " + d3 + " miles";
 }
