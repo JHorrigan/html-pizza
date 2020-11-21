@@ -14,4 +14,6 @@ function findNearest(lat, lon) {
     var d1 = haversine(lat, lon, 40.755018, -73.992556); // 310 West 38th Street
     var d2 = haversine(lat, lon, 40.791121, -73.973971); // 2450 Broadway
     var d3 = haversine(lat, lon, 40.757498, -73.986654); // 200 West 44th Street
+    // Add text to the distance labels
+    document.getElementById("location1Distance").textContent = "Distance: " + d1 + " miles";
 }
