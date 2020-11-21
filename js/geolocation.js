@@ -16,4 +16,5 @@ function findNearest(lat, lon) {
     var d3 = haversine(lat, lon, 40.757498, -73.986654); // 200 West 44th Street
     // Add text to the distance labels
     document.getElementById("location1Distance").textContent = "Distance: " + d1 + " miles";
+    document.getElementById("location2Distance").textContent = "Distance: " + d2 + " miles";
 }
