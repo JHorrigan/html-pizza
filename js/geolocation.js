@@ -12,4 +12,5 @@ window.onload = function() {
 function findNearest(lat, lon) {
     // Calculate the distances
     var d1 = haversine(lat, lon, 40.755018, -73.992556); // 310 West 38th Street
+    var d2 = haversine(lat, lon, 40.791121, -73.973971); // 2450 Broadway
 }
