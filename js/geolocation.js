@@ -7,3 +7,9 @@ window.onload = function() {
         });
     }
 }
+
+// Find the restaurant that is nearest to the user's location
+function findNearest(lat, lon) {
+    // Calculate the distances
+    var d1 = haversine(lat, lon, 40.755018, -73.992556); // 310 West 38th Street
+}
