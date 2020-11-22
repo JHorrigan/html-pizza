@@ -22,5 +22,8 @@ function findNearest(lat, lon) {
     if (d1 <= d2 && d1 <= d3) {
         // Location 1
         document.getElementById("location1").className = "nearest";
+    } else if (d2 <= d1 && d2 <= d3) {
+        // Location 2
+        document.getElementById("location2").className = "nearest";
     }
 }
