@@ -18,4 +18,15 @@ function findNearest(lat, lon) {
     document.getElementById("location1Distance").textContent = "Distance: " + d1 + " miles";
     document.getElementById("location2Distance").textContent = "Distance: " + d2 + " miles";
     document.getElementById("location3Distance").textContent = "Distance: " + d3 + " miles";
+    // Find the smallest distance
+    if (d1 <= d2 && d1 <= d3) {
+        // Location 1
+        document.getElementById("location1").className = "nearest";
+    } else if (d2 <= d1 && d2 <= d3) {
+        // Location 2
+        document.getElementById("location2").className = "nearest";
+    } else {
+        // Location 3
+        document.getElementById("location3").className = "nearest";
+    }
 }
