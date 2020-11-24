@@ -16,5 +16,9 @@ window.onload = function() {
         ctx.font = "Bold 32px Georgia";
         ctx.TextAlign = "center";
         ctx.fillStyle = "#FFFFFF";
+
+        var textX = (adCanvas.width / 2) - 80;
+        var textY = (adCanvas.height / 2);
+
     }
 }
