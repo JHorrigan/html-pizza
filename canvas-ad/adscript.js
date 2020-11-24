@@ -21,5 +21,8 @@ window.onload = function() {
         var textY = (adCanvas.height / 2);
         ctx.fillText("New York's Best Pizza", textX, textY - 10);
 
+        // Add the text styling for the sub text
+        ctx.font = "Italic 22px Georgia";
+
     }
 }
