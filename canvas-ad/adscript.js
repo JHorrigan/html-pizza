@@ -23,6 +23,7 @@ window.onload = function() {
 
         // Add the text styling for the sub text
         ctx.font = "Italic 22px Georgia";
+        ctx.fillText("Joe's Pizza Co.", textX, textY + 25);
 
     }
 }
