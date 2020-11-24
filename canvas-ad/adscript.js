@@ -14,5 +14,7 @@ window.onload = function() {
 
         // Add the text styling
         ctx.font = "Bold 32px Georgia";
+        ctx.TextAlign = "center";
+        ctx.fillStyle = "#FFFFFF";
     }
 }
