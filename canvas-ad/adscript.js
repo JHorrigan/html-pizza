@@ -19,6 +19,7 @@ window.onload = function() {
 
         var textX = (adCanvas.width / 2) - 80;
         var textY = (adCanvas.height / 2);
+        ctx.fillText("New York's Best Pizza", textX, textY - 10);
 
     }
 }
