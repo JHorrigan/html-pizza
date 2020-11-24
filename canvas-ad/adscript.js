@@ -10,5 +10,6 @@ window.onload = function() {
     function drawAdvert() {
         // Create the Background Rectangle
         ctx.fillStyle = "rgba(0,0,0,0.4)";
+        ctx.fillRect(0,0,600,150);
     }
 }
