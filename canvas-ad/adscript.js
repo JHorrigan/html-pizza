@@ -32,6 +32,7 @@ window.onload = function() {
         ctx.beginPath();
         ctx.moveTo(40, lineY);
         ctx.lineTo((lineLength + 40), lineY);
+        ctx.lineWidth = 1.0;
 
     }
 }
