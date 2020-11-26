@@ -36,5 +36,9 @@ window.onload = function() {
         ctx.strokeStyle = "rgba(255,255,255,0.4)";
         ctx.stroke();
 
+        // Draw the offer circle
+        ctx.beginPath();
+        ctx.arc(525, 75, 80, 0, Math.PI*2, true);
+
     }
 }
