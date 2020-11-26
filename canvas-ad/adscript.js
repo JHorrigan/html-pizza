@@ -25,5 +25,16 @@ window.onload = function() {
         ctx.font = "Italic 22px Georgia";
         ctx.fillText("Joe's Pizza Co.", textX, textY + 25);
 
+        // Add the seperator line
+        var lineLength = 360;
+        var lineY = (adCanvas.height / 2) + 0.5; // Ensure line is crisp
+
+        ctx.beginPath();
+        ctx.moveTo(40, lineY);
+        ctx.lineTo((lineLength + 40), lineY);
+        ctx.lineWidth = 1.0;
+        ctx.strokeStyle = "rgba(255,255,255,0.4)";
+        ctx.stroke();
+
     }
 }
