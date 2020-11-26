@@ -27,6 +27,7 @@ window.onload = function() {
 
         // Add the seperator line
         var lineLength = 360;
+        var lineY = (adCanvas.height / 2) + 0.5; // Ensure line is crisp
 
     }
 }
