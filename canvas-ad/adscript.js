@@ -30,6 +30,7 @@ window.onload = function() {
         var lineY = (adCanvas.height / 2) + 0.5; // Ensure line is crisp
 
         ctx.beginPath();
+        ctx.moveTo(40, lineY);
 
     }
 }
