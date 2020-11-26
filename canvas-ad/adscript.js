@@ -39,6 +39,7 @@ window.onload = function() {
         // Draw the offer circle
         ctx.beginPath();
         ctx.arc(525, 75, 80, 0, Math.PI*2, true);
+        ctx.fillStyle = "#009A00";
 
     }
 }
