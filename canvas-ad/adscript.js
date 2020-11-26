@@ -29,5 +29,7 @@ window.onload = function() {
         var lineLength = 360;
         var lineY = (adCanvas.height / 2) + 0.5; // Ensure line is crisp
 
+        ctx.beginPath();
+
     }
 }
