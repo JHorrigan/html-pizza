@@ -33,6 +33,7 @@ window.onload = function() {
         ctx.moveTo(40, lineY);
         ctx.lineTo((lineLength + 40), lineY);
         ctx.lineWidth = 1.0;
+        ctx.strokeStyle = "rgba(255,255,255,0.4)";
 
     }
 }
