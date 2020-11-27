@@ -42,5 +42,8 @@ window.onload = function() {
         ctx.fillStyle = "#009A00";
         ctx.fill();
 
+        // Create a linear gradient for the circle
+        var linGrad = ctx.createLinearGradient(0,0,0,160);
+
     }
 }
