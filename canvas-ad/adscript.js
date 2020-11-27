@@ -36,17 +36,16 @@ window.onload = function() {
         ctx.strokeStyle = "rgba(255,255,255,0.4)";
         ctx.stroke();
 
-        // Draw the offer circle
-        ctx.beginPath();
-        ctx.arc(525, 75, 80, 0, Math.PI*2, true);
-        ctx.fillStyle = "#009A00";
-        ctx.fill();
-
         // Create a linear gradient for the circle
         var linGrad = ctx.createLinearGradient(0,0,0,160);
         linGrad.addColorStop(0, "#009A00");
-        linGrad.addColorStop(0, "#085A00");
-        ctx.fillStyle = linGrad;
+        linGrad.addColorStop(1, "#085A00");
+
+        // Draw the offer circle
+        ctx.beginPath();
+        ctx.arc(525, 75, 80, 0, Math.PI*2, true);
+        ctx.fillStyle = linGrad; //"#009A00";
+        ctx.fill();
 
     }
 }
