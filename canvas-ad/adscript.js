@@ -45,6 +45,7 @@ window.onload = function() {
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
         ctx.shadowBlur = 10;
+        ctx.shadowColor = "rgba(0,0,0,0.8)";
 
         // Draw the offer circle
         ctx.beginPath();
