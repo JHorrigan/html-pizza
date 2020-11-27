@@ -55,6 +55,7 @@ window.onload = function() {
 
         // Add the offer text
         var offerTextX = (adCanvas.width - 75);
+        ctx.fillStyle = "#FFFFFF";
 
     }
 }
