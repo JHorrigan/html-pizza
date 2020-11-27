@@ -46,6 +46,7 @@ window.onload = function() {
         var linGrad = ctx.createLinearGradient(0,0,0,160);
         linGrad.addColorStop(0, "#009A00");
         linGrad.addColorStop(0, "#085A00");
+        ctx.fillStyle = linGrad;
 
     }
 }
