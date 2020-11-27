@@ -59,6 +59,7 @@ window.onload = function() {
         ctx.font = "24px Georgia";
         ctx.fillText("10% OFF", offerTextX, 55);
         ctx.fillText("your first", offerTextX, 84);
+        ctx.fillText("meal", offerTextX, 113);
 
     }
 }
