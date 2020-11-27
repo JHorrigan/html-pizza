@@ -53,5 +53,13 @@ window.onload = function() {
         ctx.fillStyle = linGrad; //"#009A00";
         ctx.fill();
 
+        // Add the offer text
+        var offerTextX = (adCanvas.width - 75);
+        ctx.fillStyle = "#FFFFFF";
+        ctx.font = "24px Georgia";
+        ctx.fillText("10% OFF", offerTextX, 55);
+        ctx.fillText("your first", offerTextX, 84);
+        ctx.fillText("meal", offerTextX, 113);
+
     }
 }
