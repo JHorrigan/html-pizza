@@ -41,6 +41,12 @@ window.onload = function() {
         linGrad.addColorStop(0, "#009A00");
         linGrad.addColorStop(1, "#085A00");
 
+        // Set a shadow
+        ctx.shadowOffsetX = 0;
+        ctx.shadowOffsetY = 0;
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = "rgba(0,0,0,0.8)";
+
         // Draw the offer circle
         ctx.beginPath();
         ctx.arc(525, 75, 80, 0, Math.PI*2, true);
