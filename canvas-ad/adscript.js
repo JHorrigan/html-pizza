@@ -53,5 +53,8 @@ window.onload = function() {
         ctx.fillStyle = linGrad; //"#009A00";
         ctx.fill();
 
+        // Add the offer text
+        var offerTextX = (adCanvas.width - 75);
+
     }
 }
