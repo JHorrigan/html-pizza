@@ -57,6 +57,7 @@ window.onload = function() {
         var offerTextX = (adCanvas.width - 75);
         ctx.fillStyle = "#FFFFFF";
         ctx.font = "24px Georgia";
+        ctx.fillText("10% OFF", offerTextX, 55);
 
     }
 }
