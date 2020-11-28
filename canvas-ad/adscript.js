@@ -41,6 +41,9 @@ window.onload = function() {
         linGrad.addColorStop(0, "#009A00");
         linGrad.addColorStop(1, "#085A00");
 
+        // Save the context
+        ctx.save();
+
         // Set a shadow
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 0;
@@ -52,6 +55,9 @@ window.onload = function() {
         ctx.arc(525, 75, 80, 0, Math.PI*2, true);
         ctx.fillStyle = linGrad; //"#009A00";
         ctx.fill();
+
+        // Restore the saved context
+        ctx.restore();
 
         // Add the offer text
         var offerTextX = (adCanvas.width - 75);
