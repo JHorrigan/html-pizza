@@ -8,6 +8,7 @@ window.onload = function() {
         var img = new Image();
         img.onload = function() {
             ctx.drawImage(img, 0, 0);
+            drawAdvert();
         }
     }
 
