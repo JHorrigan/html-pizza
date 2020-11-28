@@ -56,6 +56,9 @@ window.onload = function() {
         ctx.fillStyle = linGrad; //"#009A00";
         ctx.fill();
 
+        // Restore the saved context
+        ctx.restore();
+
         // Add the offer text
         var offerTextX = (adCanvas.width - 75);
         ctx.fillStyle = "#FFFFFF";
