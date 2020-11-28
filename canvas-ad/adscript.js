@@ -10,6 +10,7 @@ window.onload = function() {
             ctx.drawImage(img, 0, 0);
             drawAdvert();
         }
+        img.src = "background.png";
     }
 
     function drawAdvert() {
