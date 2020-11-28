@@ -4,7 +4,13 @@ window.onload = function() {
         // Initialise a 2d drawing context
         var ctx = adCanvas.getContext("2d");
 
-        drawAdvert();
+        // Draw on the canvas
+        var img = new Image();
+        img.onload = function() {
+            ctx.drawImage(img, 0, 0);
+            drawAdvert();
+        }
+        img.src = "background.png";
     }
 
     function drawAdvert() {
